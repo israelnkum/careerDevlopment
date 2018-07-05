@@ -1,0 +1,19 @@
+.g-branding {
+    text-align: left;
+    color: #565872;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.4em;
+    @include breakpoint(mobile-only){
+      text-align: center;
+    }
+    a{
+      color: $accent-color-2;
+      &:hover{
+        color: darken($accent-color-2, 10%);
+      }
+    }
+    .dir-rtl & {
+        text-align: left;
+    }
+}

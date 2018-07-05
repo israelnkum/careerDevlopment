@@ -1,0 +1,23 @@
+#g-abovefooter {
+    color: $abovefooter-text-color;
+    position: relative;
+    margin-top: 5rem;
+    padding-bottom: 1rem;
+    background: $abovefooter-background;
+    background-image: url($abovefooter-background-image);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    .g-content{
+      position: relative;
+      z-index: 2;
+    }
+}
+
+@media print {
+    #g-abovefooter  {
+        background: #fff !important;
+        color: #000 !important;
+    }
+}

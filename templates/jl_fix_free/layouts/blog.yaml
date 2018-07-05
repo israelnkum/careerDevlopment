@@ -1,0 +1,214 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/home.png'
+  name: blog
+layout:
+  /header/:
+    -
+      - 'custom-1332 50'
+      - 'custom-5630 50'
+  /navigation/:
+    -
+      - 'logo-7657 20'
+      - 'custom-2354 20'
+      - 'menu-5263 40'
+      - 'social-7649 15'
+      - 'search-9132 5'
+  /slideshow/:
+    -
+      - position-position-1765
+  /container-main/:
+    -
+      -
+        'aside 30':
+          -
+            - position-position-7479
+      -
+        'mainbar 70':
+          -
+            - system-messages-4126
+          -
+            - system-content-1246
+  /abovefooter/:
+    -
+      - featurebox-4370
+    -
+      - 'position-position-9499 25'
+      - 'position-position-3800 25'
+      - 'position-position-5184 50'
+  /footer/:
+    -
+      - 'logo-6571 15'
+      - 'branding-4929 40'
+      - 'social-5818 35'
+      - 'totop-3821 10'
+  /frame/:
+    -
+      - custom-2137
+  offcanvas:
+    -
+      - mobile-menu-7330
+structure:
+  header:
+    attributes:
+      boxed: ''
+      class: section-horizontal-paddings
+  navigation:
+    type: section
+    attributes:
+      boxed: ''
+      class: section-horizontal-paddings
+  slideshow:
+    type: section
+    attributes:
+      boxed: '2'
+      class: section-horizontal-paddings
+  mainbar:
+    type: section
+  container-main:
+    attributes:
+      boxed: ''
+      class: 'section-horizontal-paddings section-vertical-paddings'
+      extra: {  }
+  abovefooter:
+    type: section
+    attributes:
+      boxed: ''
+      class: section-horizontal-paddings
+  footer:
+    attributes:
+      boxed: ''
+      class: section-horizontal-paddings
+  frame:
+    type: section
+    attributes:
+      boxed: ''
+      class: section-horizontal-paddings
+  offcanvas:
+    attributes:
+      position: g-offcanvas-left
+      class: ''
+      extra: {  }
+      swipe: '1'
+      css3animation: '1'
+content:
+  custom-1332:
+    title: 'Header Contact'
+    attributes:
+      html: "<div class=\"header-contact\">\n<a href=\"#\"><i class=\"fa fa-envelope\"></i> support@joomlead.com</a>\n<a href=\"#\"><i class=\"fa fa-phone\"></i> +88 123 4567</a>\n<a href=\"#\"><i class=\"fa fa-clock-o\"></i> 9:00AM to 8:00PM</a>\n</div>"
+  custom-5630:
+    title: 'Join our team'
+    attributes:
+      html: "<div class=\"header-right\">\n  <div class=\"header-text\">\n    <i class=\"fa fa-flag\"></i>Join our team. Are you ready to change the game? <a href=\"#\">Find out more →</a> </div>\n</div>\n"
+  logo-7657:
+    attributes:
+      image: 'gantry-media://Logo/logo.png'
+  custom-2354:
+    title: 'Nav Info'
+    attributes:
+      html: "<div class=\"navigation-info\">\n  <div class=\"nav-info-content\">\n    <div class=\"info-box\">\n      Need Help? Talk to an Expert\n      <a href=\"#\">012 345 6789</a>\n    </div>\n  </div>\n</div>\n"
+    block:
+      class: 'visible-desktop nav-info'
+  menu-5263:
+    attributes:
+      mobileTarget: '1'
+    block:
+      class: nav-menu
+      variations: align-right
+  social-7649:
+    block:
+      class: visible-large
+  search-9132:
+    attributes:
+      style: '2'
+    block:
+      class: visible-large
+  position-position-1765:
+    title: 'Module Position'
+    attributes:
+      key: slideshow
+  position-position-7479:
+    title: aside
+    attributes:
+      key: aside
+  featurebox-4370:
+    title: 'Feauture Box'
+    attributes:
+      slide: none
+      position: left
+      width: '1'
+      columns: '2'
+      gutter: uk-grid-medium
+      items:
+        -
+          class: ''
+          title: '<h4 class="info-title"><a href="#">Do you have a business process that needs rethinking?</a></h4>'
+          subtitle: 'We help strengthen our client''s brands by improving how they work. We rethink the process and work together to streamline it, rebuild it, and deliver it back smarter than before.'
+          icon: pe-7s-photo-gallery
+          image: ''
+          values: 'New item'
+        -
+          class: ''
+          title: '<h4 class="info-title"><a href="#">Join our team. Are you ready to change the game?</a></h4>'
+          subtitle: 'Are you ready to obliterate the status quo? Gone are the days of the mundane desk job. Passion starts from within, and we’re all about crafting a great space for our colleagues.'
+          icon: pe-7s-users
+          image: ''
+          values: 'New item'
+  position-position-9499:
+    title: 'Find us'
+    attributes:
+      key: find-us
+  position-position-3800:
+    title: 'Quick Links'
+    attributes:
+      key: quick-links
+  position-position-5184:
+    title: 'Connect With Us'
+    attributes:
+      key: connect-with-us
+  logo-6571:
+    title: 'Logo / Image'
+    attributes:
+      image: 'gantry-media://Logo/logo.png'
+  branding-4929:
+    attributes:
+      content: 'Copyright &copy; 2018 by <a href="http://joomlead.com/" title="JoomLead" class="g-powered-by">JoomLead</a>. All rights reserved.'
+  social-5818:
+    attributes:
+      items:
+        -
+          icon: 'fa fa-facebook fa-fw'
+          text: ''
+          link: 'https://www.facebook.com/JoomLead'
+          name: Facebook
+        -
+          icon: 'fa fa-twitter fa-fw'
+          text: ''
+          link: 'http://www.twitter.com/JoomLead'
+          name: Twitter
+        -
+          icon: 'fa fa-youtube-play fa-fw'
+          text: ''
+          link: 'https://www.youtube.com/channel/UCwLjEv_hXrOGmdK4kKQEiIg'
+          name: Youtube
+        -
+          icon: 'fa fa-linkedin fa-fw'
+          text: ''
+          link: '#'
+          name: Linkedin
+        -
+          icon: 'fa fa-google-plus fa-fw'
+          text: ''
+          link: '#'
+          name: 'Google Plus'
+  totop-3821:
+    title: 'To Top'
+    attributes:
+      icon: ''
+      content: 'Go To Top <i class="fa fa-level-up"></i>'
+  custom-2137:
+    title: Frame
+    attributes:
+      html: "<span class=\"frame_top\"></span>\n<span class=\"frame_right\"></span>\n<span class=\"frame_bottom\"></span>\n<span class=\"frame_left\"></span>\n"
+  mobile-menu-7330:
+    title: 'Mobile Menu'

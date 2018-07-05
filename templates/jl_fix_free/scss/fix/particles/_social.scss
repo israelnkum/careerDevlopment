@@ -1,0 +1,55 @@
+.g-social {
+        line-height: normal;
+    a {
+      &:last-child{
+        span:first-child{
+          margin-right: 0;
+        }
+      }
+      span:first-child{
+        font-size: 14px;
+        position: relative;
+        height: 35px;
+        line-height: 35px;
+        width: 35px;
+        &:hover:after{
+          width: 100%;
+          left: 0;
+          right: auto;
+        }
+        &:after{
+          content: "";
+          height: 3px;
+          position: absolute;
+          width: 0;
+          right: 0;
+          bottom: 0;
+          background: $accent-color-1;
+          -webkit-transition: width 0.5s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
+          -moz-transition: width 0.5s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
+          -ms-transition: width 0.5s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
+          -o-transition: width 0.5s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
+          transition: width 0.5s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
+        }
+        @include transition(all 0.3s ease-in-out);
+        &.fa-facebook{
+          color: #3b5998;
+        }
+        &.fa-twitter{
+          color: #1da1f2;
+        }
+        &.fa-youtube-play{
+          color: #f36251;
+        }
+      }
+    }
+    text-align: right;
+    @include breakpoint(mobile-only){
+      text-align: center;
+      &:last-child{
+        span:first-child{
+          margin-right: 5px;
+        }
+      }
+    }
+}

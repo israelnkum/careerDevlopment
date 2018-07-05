@@ -1,0 +1,55 @@
+<?php
+return [
+    '@class' => 'Gantry\\Component\\File\\CompiledYamlFile',
+    'filename' => '/opt/lampp/htdocs/careerDev/templates/jl_fix_free/blueprints/styles/menustyle.yaml',
+    'modified' => 1530210399,
+    'data' => [
+        'name' => 'Menu Styles',
+        'description' => 'Set menu style options.',
+        'type' => 'core',
+        'form' => [
+            'fields' => [
+                '_tabs' => [
+                    'type' => 'container.tabs',
+                    'fields' => [
+                        '_tab_toplevel' => [
+                            'label' => 'Top Level',
+                            'fields' => [
+                                'text-color' => [
+                                    'type' => 'input.colorpicker',
+                                    'label' => 'Text',
+                                    'default' => '#273272'
+                                ],
+                                'text-color-active' => [
+                                    'type' => 'input.colorpicker',
+                                    'label' => 'Hover & Active Text',
+                                    'default' => '#273272'
+                                ]
+                            ]
+                        ],
+                        '_tab_sublevel' => [
+                            'label' => 'Sub Level',
+                            'fields' => [
+                                'sublevel-text-color' => [
+                                    'type' => 'input.colorpicker',
+                                    'label' => 'Text',
+                                    'default' => '#273272'
+                                ],
+                                'sublevel-text-color-active' => [
+                                    'type' => 'input.colorpicker',
+                                    'label' => 'Hover & Active Text',
+                                    'default' => '#273272'
+                                ],
+                                'sublevel-background' => [
+                                    'type' => 'input.colorpicker',
+                                    'label' => 'Background',
+                                    'default' => '#c6d3e3'
+                                ]
+                            ]
+                        ]
+                    ]
+                ]
+            ]
+        ]
+    ]
+];

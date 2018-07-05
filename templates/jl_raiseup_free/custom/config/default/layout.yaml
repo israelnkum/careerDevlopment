@@ -1,0 +1,209 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/home.png'
+  name: home
+  timestamp: 1530223352
+layout:
+  /header/:
+    -
+      - 'custom-5173 70'
+      - 'social-1900 30'
+  /navigation/:
+    -
+      - 'logo-7657 29'
+      - 'menu-5263 71'
+  /slideshow/:
+    -
+      - position-position-1765
+    -
+      - 'spacer-2142 10'
+      - 'position-position-5121 80'
+      - 'spacer-8009 10'
+    -
+      - 'spacer-1882 5'
+      - 'position-position-5348 90'
+      - 'spacer-8295 5'
+    -
+      - position-position-1245
+    -
+      - 'spacer-7448 5'
+      - 'position-position-5604 90'
+      - 'spacer-1285 5'
+    -
+      - 'spacer-3649 5'
+      - 'position-position-3093 90'
+      - 'spacer-7450 5'
+    -
+      - 'spacer-2613 5'
+      - 'position-position-7775 90'
+      - 'spacer-3509 5'
+    -
+      - 'position-position-6351 20'
+      - 'position-position-6925 60'
+      - 'position-position-3035 20'
+  /container-main/:
+    -
+      -
+        'sidebar 15': {  }
+      -
+        'mainbar 71':
+          -
+            - system-messages-4126
+          -
+            - system-content-1246
+      -
+        'aside 14': {  }
+  /abovefooter/:
+    -
+      - 'position-position-5091 17'
+      - 'position-position-9943 33'
+      - 'position-position-5299 25'
+      - 'position-position-9218 25'
+  /footer/:
+    -
+      - 'branding-4929 50'
+      - 'custom-8697 50'
+  offcanvas:
+    -
+      - mobile-menu-7330
+structure:
+  header:
+    attributes:
+      boxed: ''
+      class: section-horizontal-paddings
+  navigation:
+    type: section
+    attributes:
+      boxed: ''
+      class: section-horizontal-paddings
+  slideshow:
+    type: section
+    attributes:
+      boxed: '2'
+      class: section-horizontal-paddings
+  sidebar:
+    type: section
+  mainbar:
+    type: section
+    attributes:
+      class: ''
+  container-main:
+    attributes:
+      boxed: ''
+      class: no-content-md
+      extra: {  }
+  abovefooter:
+    type: section
+    attributes:
+      boxed: ''
+      class: section-horizontal-paddings
+  footer:
+    attributes:
+      boxed: ''
+      class: section-horizontal-paddings
+  offcanvas:
+    attributes:
+      position: g-offcanvas-left
+      class: ''
+      extra: {  }
+      swipe: '1'
+      css3animation: '1'
+content:
+  custom-5173:
+    title: 'Header Contact'
+    attributes:
+      html: "<div class=\"top-left\">\n\t<ul class=\"top-links clearfix\">\n\t\t<li><span class=\"icon theme_color flaticon-maps-and-flags\"></span>Career Development, BOX 256, TTU</li>\n\t\t<li><span class=\"icon theme_color flaticon-telephone\"></span>Phone +233 249 051 415</li>\n\t\t<li>\n\t\t\t<span class=\"icon theme_color flaticon-e-mail-envelope\"></span>\n\t\t\tcareerdevelopment.office@ttu.edu.gh\n\t\t\t\n\t\t</li>\n\t</ul>\n</div>"
+  social-1900:
+    attributes:
+      items:
+        -
+          icon: 'fa fa-facebook-f fa-fw'
+          text: ''
+          link: 'https://www.facebook.com/JoomLead'
+          name: Facebook
+        -
+          icon: 'fa fa-twitter fa-fw'
+          text: ''
+          link: 'http://www.twitter.com/JoomLead'
+          name: Twitter
+        -
+          icon: 'fa fa-instagram'
+          text: ''
+          link: ''
+          name: Instagram
+        -
+          icon: 'fa fa-linkedin'
+          text: ''
+          link: ''
+          name: Linkedin
+  logo-7657:
+    attributes:
+      image: 'gantry-media://Logo/logo.jpg'
+  menu-5263:
+    attributes:
+      menu: mainmenu
+      mobileTarget: '1'
+    block:
+      variations: align-right
+  position-position-1765:
+    title: 'Module Position'
+    attributes:
+      key: slideshow
+  position-position-5121:
+    title: 'Mission and Vision'
+    attributes:
+      key: missionAndVision
+  position-position-5348:
+    title: whatWeDo-payVisit
+    attributes:
+      key: whatWeDo-payVisit
+  position-position-1245:
+    title: 'Link To what We do'
+    attributes:
+      key: linkToWhatWeDo
+  position-position-5604:
+    title: 'About Us'
+    attributes:
+      key: about-us
+  position-position-3093:
+    title: whatWeDo-internshipEnded
+    attributes:
+      key: whatWeDo-internshipEnded
+  position-position-7775:
+    title: whatWeDo-acceptOffer
+    attributes:
+      key: whatWeDo-acceptOffer
+  position-position-6351:
+    title: 'Module Position'
+    attributes:
+      key: module-position
+  position-position-6925:
+    title: 'Module Position'
+    attributes:
+      key: module-position
+  position-position-3035:
+    title: 'Module Position'
+    attributes:
+      key: module-position
+  position-position-5091:
+    title: Logo
+    attributes:
+      key: cr-logo
+  position-position-9943:
+    title: 'Find Us'
+    attributes:
+      key: find-us
+  position-position-5299:
+    title: 'Quick Links'
+    attributes:
+      key: quik-links
+  position-position-9218:
+    title: 'Send A message'
+    attributes:
+      key: send-a-message
+  custom-8697:
+    title: 'Footer Menu'
+    attributes:
+      html: "<div class=\"footer-menu\">\n\t<p>Powered by Israel</p>\n</div>"
+  mobile-menu-7330:
+    title: 'Mobile Menu'

@@ -1,0 +1,11 @@
+#g-pricing {
+    background: $pricing-background;
+    color: $pricing-text-color;
+}
+
+@media print {
+    #g-pricing {
+        background: #fff !important;
+        color: #000 !important;
+    }
+}

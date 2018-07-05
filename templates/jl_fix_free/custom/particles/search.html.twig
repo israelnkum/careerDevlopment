@@ -1,0 +1,95 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% block particle %}
+  {% if particle.enabled %}
+  <!-- ver 2 -->
+  {% set rand = random() %}
+  {% assets in 'head' with {priority: 0} %}
+    <link rel="stylesheet" href="{{ url('gantry-theme://css/uikit.min.css') }}"/>
+    <style>
+      #jl-search-{{rand}} .uk-modal-dialog{
+        background-color: rgba(0, 0, 0, 0.6);
+        filter: alpha(opacity=0);
+        z-index: 11000;
+      }
+      #jl-search-{{rand}} input[type="search"]{
+        -moz-border-bottom-colors: none;
+        -moz-border-left-colors: none;
+        -moz-border-right-colors: none;
+        -moz-border-top-colors: none;
+        background: transparent;
+        border-color: -moz-use-text-color -moz-use-text-color #fff;
+        border-image: none;
+        border-style: none none solid;
+        border-width: medium medium 1px;
+        color: #fff;
+        font-size: 27px;
+        font-weight: lighter;
+        left: calc(50% - 350px);
+        margin: 0;
+        outline: medium none;
+        padding-bottom: 7px;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        width: 700px;
+      }
+      input[type="search"]:hover{
+        border-style: none none solid !important;
+      }
+      #jl-search-{{rand}} .search-icon{
+        left: 72%;
+        position: absolute;
+        top: 54%;
+        font-size:25px;
+        transform: translate(0%, -55%);
+      }
+    </style>
+  {% endassets -%}
+
+  {% scripts in 'footer' with {priority: 10} %}
+    {% do gantry.load('jquery') %}
+    <script src="{{ url('gantry-theme://js/uikit.min.js') }}"></script>
+    <script>
+    jQuery(function($){
+      $('.jl-search-button').on('click', function(event) {
+        setTimeout(function() { $('input[type="search"]').focus() }, 100);
+      });
+      $('#jl-search-{{rand}} .uk-modal-dialog').on('click keyup', function(event) {
+        if (event.target == this) {
+          UIkit.modal("#jl-search-{{rand}}").hide();
+        }
+      })
+    });
+    </script>
+  {% endscripts %}
+
+    {% if particle.style == 1 %}
+      <div id="jl-search-{{rand}}" class="{{particle.css.class}}">
+      <form action="{{uri}}index.php/component/search/" style="display:inline-block;background:#000">
+          <input style="width:80%;background:#000;border:0px" type="text" name="searchword"></input>
+          <input type="hidden" name="option" value="com_search">
+          <input type="hidden" name="option" value="Itemid" value="{{particle.itemid}}">
+          <a style="background:#000;cursor:pointer" class="" onclick='this.parentNode.submit(); return false;'><i class="{{particle.icon}}"></i></a>
+        </form>
+      </div>
+    {% else %}
+      <a href="#jl-search-{{rand}}" data-uk-modal></a>
+      <a class="jl-search-button" data-uk-modal="{target:'#jl-search-{{rand}}'}">
+        <i class="{{particle.icon}}"></i>
+      </a>
+      <div id="jl-search-{{rand}}" class="uk-modal {{particle.css.class}}">
+        <div class="uk-modal-dialog uk-modal-dialog-blank uk-height-viewport">
+          <a class="uk-modal-close uk-close"></a>
+          <form action="{{uri}}index.php/component/search/" style="display:inline-block;">
+            <input placeholder="Search on Site" type="search" name="searchword"></input>
+            <input type="hidden" name="Itemid" value="{{particle.itemid}}">
+            <input type="hidden" name="option" value="com_search">
+            <span class="search-icon"><i class="{{particle.icon}}"></i></span>
+          </form>
+        </div>
+      </div>
+
+    {% endif %}
+  {% endif %}
+{% endblock %}

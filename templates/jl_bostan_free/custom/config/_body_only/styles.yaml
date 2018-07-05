@@ -1,0 +1,5 @@
+preset: preset1
+utility:
+  background: '#ffffff'
+carousel:
+  background: '#ffffff'

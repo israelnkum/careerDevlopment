@@ -1,0 +1,27 @@
+#g-navigation {
+    color: $navigation-text-color;
+    background: $navigation-background;
+    position: relative;
+    z-index: 11;
+    -webkit-box-shadow: 0 0px 35px rgba(2, 6, 32, 0.2);
+    -moz-box-shadow: 0 0px 35px rgba(2, 6, 32, 0.2);
+    -ms-box-shadow: 0 0px 35px rgba(2, 6, 32, 0.2);
+    -o-box-shadow: 0 0px 35px rgba(2, 6, 32, 0.2);
+    box-shadow: 0 0px 35px rgba(2, 6, 32, 0.2);
+    .g-grid {
+        @include align-items(center);
+    }
+    .g-content{
+      padding: 10px 0;
+      margin: $content-margin;
+      @include transition(all 0.5s ease);
+    }
+
+}
+
+@media print {
+    #g-navigation {
+        background: #fff !important;
+        color: #000 !important;
+    }
+}

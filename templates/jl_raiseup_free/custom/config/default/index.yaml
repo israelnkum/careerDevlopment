@@ -1,0 +1,75 @@
+name: default
+timestamp: 1530484406
+version: 7
+preset:
+  image: 'gantry-admin://images/layouts/home.png'
+  name: home
+  timestamp: 1530223352
+positions:
+  slideshow: 'Module Position'
+  missionAndVision: 'Mission and Vision'
+  whatWeDo-payVisit: whatWeDo-payVisit
+  linkToWhatWeDo: 'Link To what We do'
+  about-us: 'About Us'
+  whatWeDo-internshipEnded: whatWeDo-internshipEnded
+  whatWeDo-acceptOffer: whatWeDo-acceptOffer
+  module-position: 'Module Position'
+  cr-logo: Logo
+  find-us: 'Find Us'
+  quik-links: 'Quick Links'
+  send-a-message: 'Send A message'
+sections:
+  header: Header
+  navigation: Navigation
+  slideshow: Slideshow
+  sidebar: Sidebar
+  mainbar: Mainbar
+  abovefooter: Abovefooter
+  aside: Aside
+  footer: Footer
+  offcanvas: Offcanvas
+particles:
+  custom:
+    custom-5173: 'Header Contact'
+    custom-8697: 'Footer Menu'
+  social:
+    social-1900: Social
+  logo:
+    logo-7657: Logo
+  menu:
+    menu-5263: Menu
+  position:
+    position-position-1765: 'Module Position'
+    position-position-5121: 'Mission and Vision'
+    position-position-5348: whatWeDo-payVisit
+    position-position-1245: 'Link To what We do'
+    position-position-5604: 'About Us'
+    position-position-3093: whatWeDo-internshipEnded
+    position-position-7775: whatWeDo-acceptOffer
+    position-position-6351: 'Module Position'
+    position-position-6925: 'Module Position'
+    position-position-3035: 'Module Position'
+    position-position-5091: Logo
+    position-position-9943: 'Find Us'
+    position-position-5299: 'Quick Links'
+    position-position-9218: 'Send A message'
+  spacer:
+    spacer-2142: Spacer
+    spacer-8009: Spacer
+    spacer-1882: Spacer
+    spacer-8295: Spacer
+    spacer-7448: Spacer
+    spacer-1285: Spacer
+    spacer-3649: Spacer
+    spacer-7450: Spacer
+    spacer-2613: Spacer
+    spacer-3509: Spacer
+  messages:
+    system-messages-4126: 'System Messages'
+  content:
+    system-content-1246: 'Page Content'
+  branding:
+    branding-4929: Branding
+  mobile-menu:
+    mobile-menu-7330: 'Mobile Menu'
+inherit: {  }

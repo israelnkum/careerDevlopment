@@ -1,0 +1,49 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: commingsoon
+  timestamp: 1473852001
+layout:
+  /commingsoon/:
+    -
+      - logo-9724
+    -
+      - heading-1284
+    -
+      - countdown-3525
+  offcanvas: {  }
+structure:
+  commingsoon:
+    type: section
+    attributes:
+      boxed: ''
+  offcanvas:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+content:
+  logo-9724:
+    title: 'Logo / Image'
+    attributes:
+      image: 'gantry-media://logo.png'
+    block:
+      class: p-logo
+  heading-1284:
+    attributes:
+      style: default
+      title: '<h1>Yay Guys! We''re Coming...</h1>'
+      subtitle: '<p>We are working very hard on the new vesion of our site.</p>'
+  countdown-3525:
+    title: 'Count down'
+    attributes:
+      style: clock
+      format: DailyCounter
+      d: 31/12/2017
+      t: '00:00:00'
+      bcolor: '#bf1b1b'
+      tcolor: '#ffffff'
+      dcolor: '#fafafa'
+      labels: 'Days,Hours,Minutes,Seconds'

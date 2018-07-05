@@ -1,0 +1,16 @@
+#g-mainbody {
+    color: $mainbody-text-color;
+    background-color: #ffffff;
+    background-image: url("images/lead/bg-site.png");
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 575px auto;
+    background-attachment: scroll;
+}
+
+@media print {
+    #g-mainbody {
+        background: #fff !important;
+        color: #000 !important;
+    }
+}

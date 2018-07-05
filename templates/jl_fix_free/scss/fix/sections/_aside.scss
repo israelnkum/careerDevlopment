@@ -1,0 +1,17 @@
+#g-aside {
+    color: $main-text-color;
+    background: $main-background;
+}
+
+.g-blog{
+  #g-aside{
+    margin-top: 3rem;
+    background: #f2f2f3;
+  }
+}
+@media print {
+    #g-aside {
+        background: #fff !important;
+        color: #000 !important;
+    }
+}

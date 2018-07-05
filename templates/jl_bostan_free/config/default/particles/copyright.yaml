@@ -1,0 +1,11 @@
+enabled: '1'
+date:
+  start: '2016'
+  end: now
+owner: 'JoomLead LLC'
+link: ''
+target: _blank
+additional:
+  text: 'Developed by <a href="https://www.joomlead.com">JoomLead</a>. All rights reserved'
+css:
+  class: ''

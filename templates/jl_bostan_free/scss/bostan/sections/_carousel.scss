@@ -1,0 +1,11 @@
+#g-carousel {
+    background: $carousel-background;
+    color: $carousel-text-color;
+}
+
+@media print {
+    #g-carousel {
+        background: #fff !important;
+        color: #000 !important;
+    }
+}

@@ -1,0 +1,47 @@
+// REQUIRED DEPENDENCIES - DO NOT CHANGE
+
+// Load Third Party Libraries
+@import "vendor/bourbon/bourbon";
+
+// Load Nucleus Configuration
+@import "configuration/nucleus/base";
+
+// Load Nucleus Mixins and Functions
+@import "nucleus/functions/base";
+@import "nucleus/mixins/base";
+
+// Load Optional Nucleus Assets
+@import "nucleus/theme/alerts";
+
+// Load Theme Variable Driven Nucleus Elements
+@import "joomla/theme/base";
+
+// Load Template Configuration
+@import "configuration/base";
+
+//-------------------------------------------
+
+// JOOMLA TEMPLATE SPECIFIC
+@import "bostan-joomla/styles/core";
+@import "bostan-joomla/styles/typography";
+@import "bostan-joomla/styles/forms";
+@import "bostan-joomla/styles/tabs";
+@import "bostan-joomla/styles/tags";
+@import "bostan-joomla/styles/utilities";
+@import "bostan-joomla/styles/modules";
+
+// JOOMLA TEMPLATE SPECIFIC COMPONENTS STYLING
+@import "bostan-joomla/components/content";
+@import "bostan-joomla/components/contact";
+@import "bostan-joomla/components/users";
+@import "bostan-joomla/components/search";
+
+// JOOMLA TEMPLATE SPECIFIC PARTICLES STYLING
+@import "bostan-joomla/particles/popupmodule";
+
+//-------------------------------------------
+
+// BREAKPOINTS
+@import "joomla/theme/breakpoints/base";
+
+//-------------------------------------------

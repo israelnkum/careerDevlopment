@@ -1,0 +1,18 @@
+#g-slideshow {
+    color: $slideshow-text-color;
+    background: $slideshow-background;
+    position: relative;
+    z-index: 10;
+    margin-top: -6rem;
+    @include breakpoint(small-mobile-range){
+      margin-top: 0;
+    }
+}
+
+
+@media print {
+    #g-slideshow {
+        background: #fff !important;
+        color: #000 !important;
+    }
+}

@@ -1,0 +1,9 @@
+fix-theme:
+  title: 'Fix Theme'
+  description: 'Sample menu for Fix theme.'
+
+  items:
+    fix:
+      title: 'Home'
+      outline: home
+      home: 1

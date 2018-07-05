@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.3" client="site" method="upgrade">
+    <name>JMG Img Hover Modul</name>
+    <author>Otto Szekeres</author>
+	<license>GNU General Public License version 2 or later</license>
+    <version>1.1.0</version>
+    <description><![CDATA[JMG Image Hover Modul is based on Pure CSS Image Hover Effect Library allowing you to easily implement scaleable image hover effects.<br /><br />&copy;&nbsp;2016&nbsp;Joomla! dewelopment&nbsp;<a href="http://www.doc-seo.com" target="_blank">Otto Szekeres</a> - CSS development&nbsp;<a href="http://imagehover.io" target="_blank">imagehover.io</a>]]></description>
+	
+    <files>
+	    <filename module="mod_jmg_imghover">mod_jmg_imghover.php</filename>
+        <filename>mod_jmg_imghover.xml</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <folder>assets</folder>
+        <folder>tmpl</folder>
+		<folder>language</folder>
+    </files>
+	
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.mod_jmg_imghover.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.mod_jmg_imghover.sys.ini</language>
+		<language tag="de-DE">language/de-DE/de-DE.mod_jmg_imghover.ini</language>
+		<language tag="de-DE">language/de-DE/de-DE.mod_jmg_imghover.sys.ini</language>
+	</languages>
+	
+    <config>
+		<fields name="params">
+			<fieldset name="settings" label="MOD_JMG_IMGHOVER_SETTINGS">		
+				<field name="mod_jmg_imghover_image"
+					type="media"
+					default=""
+					label="MOD_JMG_IMGHOVER_IMAGE"
+					description="MOD_JMG_IMGHOVER_IMAGE"
+					filter="string"
+				/>
+				
+				<field name="mod_jmg_imghover_head"
+					type="text"
+					default=""
+					label="MOD_JMG_IMGHOVER_HEAD"
+					description="MOD_JMG_IMGHOVER_HEAD"
+					filter="string"
+				/>
+				
+				<field name="mod_jmg_imghover_text" 
+					type="textarea" 
+					default="" 
+					label="MOD_JMG_IMGHOVER_TEXT" 
+					description="MOD_JMG_IMGHOVER_TEXT" 
+					rows="5" 
+					cols="5" filter="raw"
+				/>
+				
+				<field name="mod_jmg_imghover_effect" 
+					type="list" 
+					default="" 
+					label="MOD_JMG_IMGHOVER_EFFECT" 
+					description="MOD_JMG_IMGHOVER_EFFECT">
+					<option value="imghvr-fade">fade</option>
+					<option value="imghvr-push-up">push-up</option>
+					<option value="imghvr-push-down">push-down</option>
+					<option value="imghvr-push-left">push-left</option>
+					<option value="imghvr-push-right">push-right</option>
+					<option value="imghvr-slide-up">slide-up</option>
+					<option value="imghvr-slide-down">slide-down</option>
+					<option value="imghvr-slide-left">slide-left</option>
+					<option value="imghvr-slide-right">slide-right</option>
+					<option value="imghvr-reveal-up">reveal-up</option>
+					<option value="imghvr-reveal-down">reveal-down</option>
+					<option value="imghvr-reveal-left">reveal-left</option>
+					<option value="imghvr-reveal-right">reveal-right</option>
+					<option value="imghvr-hinge-up">hinge-up</option>
+					<option value="imghvr-hinge-down">hinge-down</option>
+					<option value="imghvr-hinge-left">hinge-left</option>
+					<option value="imghvr-hinge-right">hinge-right</option>
+					<option value="imghvr-flip-horiz">flip-horiz</option>
+					<option value="imghvr-flip-vert">flip-vert</option>
+					<option value="imghvr-flip-diag-1">flip-diag-1</option>
+					<option value="imghvr-flip-diag-2">flip-diag-2</option>
+					<option value="imghvr-shutter-out-horiz">shutter-out-horiz</option>
+					<option value="imghvr-shutter-out-vert">shutter-out-vert</option>
+					<option value="imghvr-shutter-out-diag-1">shutter-out-diag-1</option>
+					<option value="imghvr-shutter-out-diag-2">shutter-out-diag-2</option>
+					<option value="imghvr-shutter-in-horiz">shutter-in-horiz</option>
+					<option value="imghvr-shutter-in-vert">shutter-in-vert</option>
+					<option value="imghvr-shutter-in-out-horiz">shutter-in-out-horiz</option>
+					<option value="imghvr-shutter-in-out-vert">shutter-in-out-vert</option>
+					<option value="imghvr-shutter-in-out-diag-1">shutter-in-out-diag-1</option>
+					<option value="imghvr-shutter-in-out-diag-2">shutter-in-out-diag-2</option>
+					<option value="imghvr-fold-up">fold-up</option>
+					<option value="imghvr-fold-down">fold-down</option>
+					<option value="imghvr-fold-left">fold-left</option>
+					<option value="imghvr-fold-right">fold-right</option>
+					<option value="imghvr-zoom-in">zoom-in</option>
+					<option value="imghvr-zoom-out">zoom-out</option>
+					<option value="imghvr-zoom-out-up">zoom-out-up</option>
+					<option value="imghvr-zoom-out-down">zoom-out-down</option>
+					<option value="imghvr-zoom-out-left">zoom-out-left</option>
+					<option value="imghvr-zoom-out-right">zoom-out-right</option>
+					<option value="imghvr-zoom-out-flip-horiz">zoom-out-flip-horiz</option>
+					<option value="imghvr-zoom-out-flip-vert">zoom-out-flip-vert</option>
+					<option value="imghvr-blur">blur</option>
+				</field>
+				
+				<field name="mod_jmg_imghover_background_color" 
+					type="color" 
+					default="#ffffff"
+					label="MOD_JMG_IMGHOVER_BACKGROUND_COLOR"
+					description="MOD_JMG_IMGHOVER_BACKGROUND_COLOR"
+				/>
+				
+				<field name="mod_jmg_imghover_menu_id" 
+					type="menuitem" 
+					default="45" 
+					label="MOD_JMG_IMGHOVER_MENU_ID" 
+					description="MOD_JMG_IMGHOVER_MENU_ID" 
+				/>
+         	</fieldset>
+			
+			<fieldset name="mehr" label="MOD_JMG_IMGHOVER_MORE">
+			
+			</fieldset>
+		</fields>
+    </config>
+	<updateservers>
+    	<server type="extension" priority="1" name="JMG Image Hover's Updates">http://joomega.com/updates/mod_jmg_imghover/extension.xml</server>
+ 	</updateservers>
+</extension>

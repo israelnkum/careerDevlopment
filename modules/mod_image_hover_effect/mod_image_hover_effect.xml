@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+  <name>image hover effect</name>
+  <author>joombest.com</author>
+  <creationDate>Junly 2016</creationDate>
+  <copyright>Copyright (C) 2016 joombest.com. All rights reserved.</copyright>
+  <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+  <authorEmail>support@joombest.com</authorEmail>
+  <authorUrl>www.joombest.com</authorUrl>
+  <version>1.2</version>
+  <description>EXC_DESC</description>
+  <languages>
+    <language tag="en-GB">language/en-GB.mod_image_hover_effect.ini</language>
+  </languages>
+  <files>
+    <filename module="mod_image_hover_effect">mod_image_hover_effect.php</filename>
+    <filename>helper.php</filename>
+    <filename>index.html</filename>
+    <folder>tmpl/</folder>
+    <folder>fields/</folder>
+    <folder>helpers/</folder>
+    <folder>language/</folder>
+    <folder>assets/</folder>
+  </files>
+  <config>
+    <fields name="params">
+      <fieldset name="basic" addfieldpath="/modules/mod_image_hover_effect/fields">
+        <field type="assets" url="/modules/mod_image_hover_effect/assets" />
+        <field type="tmpl" name="sp_style" default="Imghoveeffec"  label="Function name" description="Function name" />
+		<field name="enablejQuery" type="radio" default="1" label="Enable/Disable jQuery" description="choose Enable/Disable">
+			<option value="1">Enable</option>
+			<option value="0">Disable</option>
+		</field>
+		<field name="width_module" type="text" default="100" label="Width of Module" description="Width without px" />
+		<field name="height_module" type="text" default="500" label="Height of Module" description="Height without px" />
+      </fieldset>
+      <fieldset name="sliders" description="config item data,Click Add New(need title)" label="Config data">
+        <field type="sliders" name="sliders" />
+      </fieldset>
+	  <fieldset name="animation">
+        <field type="animation" name="animation" />
+		<field type="loader" />
+		<field name="choose_style" type="list" default="1" label="choose style" description="select style">
+			<option value="1">style 1</option>
+			<option value="2">style 2</option>
+			<option value="3">style 3</option>
+		</field>
+		<field name="change_text" type="text" default="40" label="change position text" description="change position " />
+		<field name="font_size_title" type="text" default="90" label="Font size title" description="Font size without px" />
+		<field name="color_hover" type="hotcolor" default="#4f90cf" label="Color hover" description="Color of hover" />
+		<field name="color_title" type="hotcolor" default="#CF0000" label="Color title" description="Color of title" />
+		
+		
+      </fieldset>
+      <fieldset name="advanced">	  
+		<field name="moduleclass_sfx" type="text" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+		<field name="module_cache" type="list" default="1" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+		<option value="1">JGLOBAL_USE_GLOBAL</option>
+		<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+		</field>
+		<field name="cache" type="hidden" default="1" />
+		<field name="cache_time" type="text" default="900" label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+		<field name="cachemode" type="hidden" default="itemid">
+			<option value="itemid"></option>
+		</field>
+      </fieldset>
+    </fields>
+  </config>
+</extension>

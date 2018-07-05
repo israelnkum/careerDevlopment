@@ -1,0 +1,37 @@
+enabled: '1'
+css:
+  class: ''
+title: ''
+target: _blank
+display: both
+items:
+  -
+    icon: 'fa fa-facebook fa-fw'
+    text: ''
+    link: 'https://www.facebook.com/JoomLead'
+    name: Facebook
+  -
+    icon: 'fa fa-twitter fa-fw'
+    text: ''
+    link: 'http://www.twitter.com/JoomLead'
+    name: Twitter
+  -
+    icon: 'fa fa-youtube fa-fw'
+    text: ''
+    link: 'https://www.youtube.com/channel/UCwLjEv_hXrOGmdK4kKQEiIg'
+    name: Youtube
+  -
+    icon: 'fa fa-vk fa-fw'
+    text: ''
+    link: '#'
+    name: Vk
+  -
+    icon: 'fa fa-linkedin'
+    text: ''
+    link: '#'
+    name: Lunkedin
+  -
+    icon: 'fa fa-instagram fa-fw'
+    text: ''
+    link: '#'
+    name: Instagram

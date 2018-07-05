@@ -1,0 +1,10 @@
+css:
+  -
+    name: 'New item'
+  -
+    location: 'gantry-assets://bootstrap/css/bootstrap.min.css'
+    inline: ''
+    extra: {  }
+    priority: '0'
+    name: 'New item'
+javascript: {  }

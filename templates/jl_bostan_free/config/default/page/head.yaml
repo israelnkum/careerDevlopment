@@ -1,0 +1,44 @@
+meta: {  }
+head_bottom: ''
+atoms:
+  -
+    id: sticky-3545
+    type: sticky
+    title: Sticky
+    attributes:
+      enabled: '1'
+      id: g-navigation
+      spacing: '0'
+      css:
+        class: ''
+  -
+    title: 'Back To Top'
+    type: backtotop
+    attributes:
+      enabled: true
+      icon: 'fa fa-angle-double-up'
+    id: backtotop-9041
+  -
+    type: frameworks
+    title: 'JavaScript Frameworks'
+    attributes:
+      enabled: '1'
+      jquery:
+        enabled: '1'
+        ui_core: '0'
+        ui_sortable: '0'
+      bootstrap:
+        enabled: '0'
+      mootools:
+        enabled: '0'
+        more: '0'
+    id: frameworks-3779
+  -
+    id: assets-3565
+    type: assets
+    title: 'Custom CSS / JS'
+    attributes:
+      enabled: '1'
+      css: {  }
+      javascript:
+        - { location: 'gantry-assets://js/theme.js', inline: '', in_footer: '0', extra: {  }, priority: '0', name: 'Theme js' }

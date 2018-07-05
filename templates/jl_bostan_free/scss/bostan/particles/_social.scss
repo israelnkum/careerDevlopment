@@ -1,0 +1,12 @@
+.g-social {
+    a {
+        padding: 0.1875rem 0.4rem;
+        color: $white;
+        @include breakpoint(tablet-range) {
+            padding: 0.1875rem 0.25rem;
+        }
+    }
+    a:hover{
+      text-decoration: none;
+    }
+}

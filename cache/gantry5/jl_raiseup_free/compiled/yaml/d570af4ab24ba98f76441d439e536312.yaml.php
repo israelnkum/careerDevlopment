@@ -1,0 +1,87 @@
+<?php
+return [
+    '@class' => 'Gantry\\Component\\File\\CompiledYamlFile',
+    'filename' => '/opt/lampp/htdocs/careerDev/templates/jl_raiseup_free/custom/config/_error/index.yaml',
+    'modified' => 1530484406,
+    'data' => [
+        'name' => '_error',
+        'timestamp' => 1530484406,
+        'version' => 7,
+        'preset' => [
+            'image' => 'gantry-admin://images/layouts/default.png',
+            'name' => '_error',
+            'timestamp' => 1502553408
+        ],
+        'positions' => [
+            'cr-logo' => 'Logo',
+            'find-us' => 'Find Us',
+            'quik-links' => 'Quick Links',
+            'send-a-message' => 'Send A message'
+        ],
+        'sections' => [
+            'header' => 'Header',
+            'navigation' => 'Navigation',
+            'sidebar' => 'Sidebar',
+            'mainbar' => 'Mainbar',
+            'abovefooter' => 'Abovefooter',
+            'aside' => 'Aside',
+            'footer' => 'Footer',
+            'offcanvas' => 'Offcanvas'
+        ],
+        'particles' => [
+            'messages' => [
+                'system-messages-6091' => 'System Messages'
+            ],
+            'content' => [
+                'system-content-3910' => 'Page Content'
+            ],
+            'custom' => [
+                'custom-5592' => 'Custom HTML',
+                'custom-2850' => 'Custom HTML',
+                'custom-7526' => 'Header Contact',
+                'custom-4505' => 'Footer Menu'
+            ],
+            'social' => [
+                'social-4490' => 'Social'
+            ],
+            'logo' => [
+                'logo-9248' => 'Logo'
+            ],
+            'menu' => [
+                'menu-4716' => 'Menu'
+            ],
+            'position' => [
+                'position-position-3157' => 'Logo',
+                'position-position-5633' => 'Find Us',
+                'position-position-7074' => 'Quick Links',
+                'position-position-3931' => 'Send A message'
+            ],
+            'branding' => [
+                'branding-8841' => 'Branding'
+            ],
+            'mobile-menu' => [
+                'mobile-menu-9934' => 'Mobile Menu'
+            ]
+        ],
+        'inherit' => [
+            'default' => [
+                'header' => 'header',
+                'navigation' => 'navigation',
+                'abovefooter' => 'abovefooter',
+                'footer' => 'footer',
+                'offcanvas' => 'offcanvas',
+                'custom-7526' => 'custom-5173',
+                'social-4490' => 'social-1900',
+                'logo-9248' => 'logo-7657',
+                'menu-4716' => 'menu-5263',
+                'position-position-3157' => 'position-position-5091',
+                'position-position-5633' => 'position-position-9943',
+                'position-position-7074' => 'position-position-5299',
+                'position-position-3931' => 'position-position-9218',
+                'branding-8841' => 'branding-4929',
+                'custom-4505' => 'custom-8697',
+                'mobile-menu-9934' => 'mobile-menu-7330'
+            ]
+        ]
+    ]
+];

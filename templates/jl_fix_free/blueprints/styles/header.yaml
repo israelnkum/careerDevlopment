@@ -1,0 +1,15 @@
+name: Header Colors
+description: Header colors for the Fix theme
+type: section
+
+form:
+  fields:
+
+    background:
+      type: input.colorpicker
+      label: Background
+      default: "#273272"
+    text-color:
+      type: input.colorpicker
+      label: Text
+      default: "#9d9ec0"

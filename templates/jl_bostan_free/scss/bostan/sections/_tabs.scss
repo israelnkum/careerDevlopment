@@ -1,0 +1,11 @@
+#g-tabs {
+    background: $tabs-background;
+    color: $tabs-text-color;
+}
+
+@media print {
+    #g-tabs {
+        background: #fff !important;
+        color: #000 !important;
+    }
+}
